@@ -1,0 +1,2 @@
+scrape_id,job_id,started_at,ended_at,duration_seconds,endpoint,status,source_url,page_title,language,timezone,proxy_used,cache_state,credits_used,status_code,content_type,is_preview
+019d731d-e914-75a2-b0ee-005770eec5da,kB_O7cRQ1Y9KXbx0dpanm,2026-04-09T16:40:32.814Z,2026-04-09T16:40:35.640Z,2.83,scrape,success,https://9animetv.to/home,9anime Homepage: Best free anime to watch in HD quality,en,America/New_York,basic,miss,1,200,text/html; charset=utf-8,False
