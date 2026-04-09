@@ -1,0 +1,25 @@
+SELECT
+   m.anime_id,
+  m.title,
+  m.url,
+  m.thumbnail_url,
+  m.description,
+  r.period,
+  r.`rank`,
+  r.view_count,
+  m.scraped_at
+FROM `scrappeddata223456.Anime_mastertable` m
+LEFT JOIN `scrappeddata223456.Topanime_rankings` r
+  ON m.anime_id = r.anime_id
+
+
+WHERE r.period IS NOT NULL
+
+
+ORDER BY
+  CASE r.period
+    WHEN 'today' THEN 1
+    WHEN 'week'  THEN 2
+    WHEN 'month' THEN 3
+  END,
+  CAST(r.`rank` AS INT64) ASC
